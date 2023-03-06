@@ -1,9 +1,12 @@
+// STARTER CODE 
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
 
 // get all products
+// NO ERROR BUT DOES NOT DISPLAY TAG IDS
+// COPIED FROM CLASS ACTIVITY
 router.get('/', async (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
@@ -19,6 +22,8 @@ router.get('/', async (req, res) => {
 });
 
 // get one product
+// NO ERROR BUT DOES NOT DISPLAY TAG IDS
+// COPIED FROM CLASS ACTIVITY
 router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
@@ -37,6 +42,8 @@ router.get('/:id', async (req, res) => {
 });
 
 // create new product
+// STARTER CODE
+// CONFUSED ABOUT INSOMNIA POST SYNTAX
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
@@ -69,6 +76,8 @@ router.post('/', (req, res) => {
 });
 
 // update product
+// STARTER CODE
+// CONFUSED ABOUT INSOMNIA PUT SYNTAX
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
@@ -110,6 +119,8 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// STARTER CODE
+// CONFUSED ABOUT INSOMNIA DELETE SYNTAX
 router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
   try {
@@ -129,4 +140,5 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
+//STARTER CODE 
 module.exports = router;

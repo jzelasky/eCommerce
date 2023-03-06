@@ -1,3 +1,4 @@
+// STARTER CODE
 const { ProductTag } = require('../models');
 
 const productTagData = [

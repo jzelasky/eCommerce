@@ -5,6 +5,7 @@ const sequelize = require('../config/connection');
 class ProductTag extends Model {}
 
 ProductTag.init(
+  // MY WORK, EVERYTHING ELSE STARTER CODE
   {
     id: {
       type: DataTypes.INTEGER,

@@ -1,8 +1,11 @@
+//STARTER CODE 
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
 // The `/api/tags` endpoint
 
+// NO ERROR BUT DOES NOT DISPLAY ASSOCIATED PRODUCT DATA
+// COPIED FROM PRODUCT-ROUTES
 router.get('/', async (req, res) => {
   // find all tags
   // be sure to include its associated Product data
@@ -17,6 +20,8 @@ router.get('/', async (req, res) => {
   }
 });
 
+// NO ERROR BUT DOES NOT DISPLAY ASSOCIATED PRODUCT DATA
+// COPIED FROM PRODUCT-ROUTES
 router.get('/:id', async (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
@@ -34,6 +39,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+// COPIED FROM PRODUCT-ROUTES
 router.post('/', (req, res) => {
   // create a new tag
   Tag.create(req.body)
@@ -56,6 +62,7 @@ router.post('/', (req, res) => {
     });
 });
 
+// COPIED FROM PRODUCT-ROUTES
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
   Tag.update(req.body, {
@@ -92,6 +99,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// COPIED FROM PRODUCT ROUTES
 router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
   try {
@@ -111,4 +119,5 @@ router.delete('/:id', (req, res) => {
   }
 });
 
+//STARTER CODE
 module.exports = router;

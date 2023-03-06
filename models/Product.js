@@ -8,6 +8,7 @@ class Product extends Model {}
 
 
 Product.init(
+  // MY WORK, EVERYTHING ELSE STARTER CODE
   {
     id: {
       type: DataTypes.INTEGER,

@@ -1,3 +1,4 @@
+//STARTER CODE
 const { Category } = require('../models');
 
 const categoryData = [
