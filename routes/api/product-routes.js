@@ -6,13 +6,12 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // get all products
 // NO ERROR BUT DOES NOT DISPLAY TAG IDS
-// COPIED FROM CLASS ACTIVITY
+// COPIED FROM CLASS ACTIVITY 13.24
 router.get('/', async (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   try {
-    const productData = await
-    Product.findAll({
+    const productData = await Product.findAll({
       include: [{model: Category}, {model: Tag}]
     });
     res.status(200).json(productData);
@@ -23,7 +22,7 @@ router.get('/', async (req, res) => {
 
 // get one product
 // NO ERROR BUT DOES NOT DISPLAY TAG IDS
-// COPIED FROM CLASS ACTIVITY
+// COPIED FROM CLASS ACTIVITY 13.24
 router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
