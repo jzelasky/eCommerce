@@ -28,7 +28,7 @@ Note: To install this program you must already have node.js and mySQL installed 
 
         DB_PASSWORD='YOUR PASSWORD HERE'
 
-5. In the command line open the mySQL shell by running `mysql -u YOUR USERNAME HERE -p`, substituting your mySQL username where indicated, followed by your mySQL passowrd. 
+5. In the command line open the mySQL shell by running `mysql -u YOUR USERNAME HERE -p`, substituting your mySQL username where indicated, followed by your mySQL password. 
 
 6. In the mySQL shell run `source db/schema.sql;`. Then exit the shell by running `quit`. 
 
