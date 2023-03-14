@@ -32,7 +32,7 @@ Note: To install this program you must already have node.js and mySQL installed 
 
 6. In the mySQL shell run `source db/schema.sql;`. Then exit the shell by running `quit`. 
 
-7. If you would like some seed data to get started, in the command line run `node seeds/index.js`. This is optional. 
+7. If you would like some seed data to get started, in the command line run `npm run seed`. This is optional. 
 
 8. You are now ready to begin using the application. 
 
@@ -49,7 +49,7 @@ After installtion, make sure you are in the `eCommerce` directory. In the comman
 * `GET/POST: localhost:3001/api/tags`
 * `GET/PUT/DELETE: localhost:3001/api/tags/:id`
 
-Click [here]() for a video walkthrough of the application.
+Click [here](https://drive.google.com/file/d/17BTXzHhtkVxO2o6YmbEeJIaZ6DvRyRwD/view) for a video walkthrough of the application.
 
 ## Questions
 
